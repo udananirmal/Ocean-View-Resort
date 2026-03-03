@@ -1,0 +1,85 @@
+/* ===== Ocean View Resort - Main Styles ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #0077b6;
+  --primary-dark: #005f8e;
+  --secondary: #00b4d8;
+  --accent: #f4a261;
+  --success: #2dc653;
+  --danger: #e63946;
+  --warning: #ffd166;
+  --info: #48cae4;
+  --dark: #1d3557;
+  --light: #f8f9fa;
+  --bg: #eef2f7;
+  --sidebar-w: 260px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; min-height: 100vh; }
+
+/* ===== Login Page ===== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #f4a261 100%);
+  padding: 20px;
+}
+.login-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.login-logo { text-align: center; margin-bottom: 30px; }
+.login-logo .logo-icon { font-size: 3rem; }
+.login-logo h1 { color: var(--primary); font-size: 1.6rem; font-weight: 700; }
+.login-logo p { color: #888; font-size: 0.85rem; }
+.login-card h2 { text-align: center; color: var(--dark); margin-bottom: 30px; font-size: 1.3rem; }
+
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 11px 24px; border: none; border-radius: var(--radius-sm);
+  font-size: 0.9rem; font-weight: 600; cursor: pointer; font-family: inherit;
+  transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+}
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,119,182,0.35); }
+.btn-success { background: var(--success); color: #fff; }
+.btn-success:hover { background: #22a244; }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-danger:hover { background: #c1121f; }
+.btn-warning { background: var(--warning); color: #333; }
+.btn-warning:hover { background: #f9c022; }
+.btn-info { background: var(--info); color: #fff; }
+.btn-secondary { background: #6c757d; color: #fff; }
+.btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+.btn-outline:hover { background: var(--primary); color: #fff; }
+.btn-sm { padding: 6px 14px; font-size: 0.8rem; }
+.btn-lg { padding: 14px 32px; font-size: 1rem; }
+.btn-block { width: 100%; justify-content: center; }
+
+/* Layout */
+.app-wrapper { display: flex; min-height: 100vh; }
+
+/*Sidebar */
+.sidebar {
+  width: var(--sidebar-w); background: var(--dark);
+  min-height: 100vh; position: fixed; left: 0; top: 0;
+  display: flex; flex-direction: column; z-index: 100;
+  transition: transform 0.3s;
+}
+
+
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.page-header h2 { font-size: 1.4rem; font-weight: 700; color: var(--dark); }
+.page-header .breadcrumb { font-size: 0.8rem; color: #888; margin-top: 2px; }
