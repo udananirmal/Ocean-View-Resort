@@ -40,7 +40,6 @@
       </button>
     </form>
     <p style="text-align:center;margin-top:24px;font-size:0.78rem;color:#aaa">
-      Default: admin / admin123 &nbsp;|&nbsp; staff1 / staff123
     </p>
   </div>
 </div>
