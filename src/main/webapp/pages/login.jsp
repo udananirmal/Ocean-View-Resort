@@ -11,11 +11,10 @@
 <body>
 <div class="login-wrapper">
   <div class="login-card">
-    <div class="login-logo">
-      <span class="logo-icon">🌊</span>
+    <div class="login-first">
       <h1>Ocean View Resort</h1>
-      <p>Galle, Sri Lanka</p>
-    </div>
+      <p> Galle, Sri Lanka</p>
+   </div>
     <h2>Staff Login</h2>
     <% if (request.getAttribute("error") != null) { %>
     <div class="alert alert-danger"><i class="fas fa-exclamation-circle"></i> ${error}</div>
