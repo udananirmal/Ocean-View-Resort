@@ -7,8 +7,6 @@ public class User {
     private String fullName;
     private String email;
     private String role;
-    private boolean isActive;
-
     public User() {}
 
     public int getId() { return id; }
@@ -23,7 +21,5 @@ public class User {
     public void setEmail(String email) { this.email = email; }
     public String getRole() { return role; }
     public void setRole(String role) { this.role = role; }
-    public boolean isActive() { return isActive; }
-    public void setActive(boolean active) { isActive = active; }
     public boolean isAdmin() { return "ADMIN".equals(role); }
 }

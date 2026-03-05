@@ -66,29 +66,6 @@ public class UserDAO {
         } catch (SQLException e) { e.printStackTrace(); return false; }
     }
 
-    public boolean updateUser(User u) {
-        String sql = "UPDATE users SET full_name=?,email=?,role=?,is_active=? WHERE id=?";
-        try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, u.getFullName());
-            ps.setString(2, u.getEmail());
-            ps.setString(3, u.getRole());
-            ps.setBoolean(4, u.isActive());
-            ps.setInt(5, u.getId());
-            return ps.executeUpdate() > 0;
-        } catch (SQLException e) { e.printStackTrace(); return false; }
-    }
-
-    public boolean resetPassword(int id, String newPassword) {
-        String sql = "UPDATE users SET password=? WHERE id=?";
-        try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, newPassword);
-            ps.setInt(2, id);
-            return ps.executeUpdate() > 0;
-        } catch (SQLException e) { e.printStackTrace(); return false; }
-    }
-
     public boolean deleteUser(int id) {
         String sql = "DELETE FROM users WHERE id=?";
         try (Connection conn = DBConnection.getConnection();
@@ -105,7 +82,6 @@ public class UserDAO {
         u.setFullName(rs.getString("full_name"));
         u.setEmail(rs.getString("email"));
         u.setRole(rs.getString("role"));
-        u.setActive(rs.getBoolean("is_active"));
         return u;
     }
 }
