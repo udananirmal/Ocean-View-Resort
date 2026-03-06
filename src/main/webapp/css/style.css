@@ -40,7 +40,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; m
   box-shadow: 0 20px 60px rgba(0,0,0,0.15);
 }
 .login-first { text-align: center; margin-bottom: 30px; }
-.login-first h1 { color:#1e40af; font-size: 1.6rem; font-weight: 700; }
+.login-first h1 { color:#1e40af; font-size: 1.8rem; font-weight: 700; }
 .login-first p { color: #000000; font-size: 0.85rem; }
 .login-card h2 { text-align: center; color: var(--dark); margin-bottom: 35px; font-size: 1.4rem; }
 
@@ -90,10 +90,10 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; m
   transition: transform 0.3s;
 }
 .sidebar-brand {
-  padding: 24px 20px 20px;
+  padding: 30px 20px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-.sidebar-brand h2 { color: #fff; font-size: 1.1rem; font-weight: 700; }
+.sidebar-brand h2 { color: #fff; font-size: 1.3rem; font-weight: 700; }
 .sidebar-brand p { color: rgba(255,255,255,0.5); font-size: 0.75rem; }
 .sidebar-brand .brand-icon { font-size: 1.8rem; display: block; margin-bottom: 6px; }
 .sidebar-nav { padding: 16px 0; flex: 1; overflow-y: auto; }

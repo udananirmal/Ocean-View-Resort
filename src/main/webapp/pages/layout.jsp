@@ -26,10 +26,8 @@ if (errorMsg   != null) session.removeAttribute("errorMsg");
 <body>
 <div class="app-wrapper">
 
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-brand">
-      <span class="brand-icon">🌊</span>
       <h2>Ocean View Resort</h2>
       <p>Management System</p>
     </div>

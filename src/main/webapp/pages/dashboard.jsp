@@ -88,8 +88,8 @@ List<com.oceanview.model.Reservation> recent = (List<com.oceanview.model.Reserva
           <% } %>
         </tbody>
       </table>
-    </div><!-- page-content -->
-  </div><!-- main-content -->
-</div><!-- app-wrapper -->
+    </div>
+  </div>
+</div>
 <script src="<%=ctx%>/js/main.js"></script>
 </body></html>
